@@ -68,4 +68,9 @@ export const queryRAG = async (query) => {
   return res.data;
 };
 
+export const getQuestions = async () => {
+  const res = await api.get('/questions/');
+  return res.data.questions;
+};
+
 export default api;

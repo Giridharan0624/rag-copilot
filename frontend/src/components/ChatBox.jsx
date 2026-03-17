@@ -4,14 +4,13 @@ import SourcePanel from './SourcePanel';
 import { queryRAG } from '../services/api';
 import './ChatBox.css';
 
-export default function ChatBox() {
+export default function ChatBox({ input, setInput }) {
   const [messages, setMessages] = useState([
     {
       role: 'ai',
       text: "👋 Hello! I'm the NeuroStack AI Copilot. Ask me anything about TaskFlow AI — account setup, features, integrations, billing, and more!",
     },
   ]);
-  const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [activeSources, setActiveSources] = useState(null);
   const chatEndRef = useRef(null);

@@ -1,11 +1,14 @@
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ChatBox from '../components/ChatBox';
+import QuestionsPanel from '../components/QuestionsPanel';
 import { logout, getUser } from '../services/api';
 import './Dashboard.css';
 
 export default function Dashboard() {
   const navigate = useNavigate();
   const user = getUser();
+  const [input, setInput] = useState('');
 
   const handleLogout = () => {
     logout();
@@ -33,7 +36,8 @@ export default function Dashboard() {
         </div>
       </header>
       <main className="dashboard-main">
-        <ChatBox />
+        <ChatBox input={input} setInput={setInput} />
+        <QuestionsPanel onQuestionClick={(q) => setInput(q)} />
       </main>
     </div>
   );
