@@ -1,0 +1,12 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+db.sqlite3
+
+# IDE
+.vscode/
+.idea/

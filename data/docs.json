@@ -1,0 +1,142 @@
+[
+  {
+    "question": "How do I reset my password?",
+    "answer": "Go to Settings > Account > Security, then click 'Reset Password'. You'll receive an email with a reset link. The link expires in 24 hours."
+  },
+  {
+    "question": "How do I invite team members?",
+    "answer": "Navigate to Settings > Team > Invite Members. Enter the email addresses of your teammates and select their roles (Admin, Editor, or Viewer). They'll receive an invitation email."
+  },
+  {
+    "question": "What are the pricing plans available?",
+    "answer": "TaskFlow AI offers three plans: Free (up to 5 users, 10 projects), Pro ($12/user/month, unlimited projects, priority support), and Enterprise (custom pricing, SSO, dedicated support, SLA)."
+  },
+  {
+    "question": "How do I create a new project?",
+    "answer": "Click the '+ New Project' button on your dashboard. Enter a project name, description, and optionally assign a team. You can choose from blank, Kanban, Scrum, or custom templates."
+  },
+  {
+    "question": "How do I export my data?",
+    "answer": "Go to Settings > Data Management > Export. You can export your data in CSV, JSON, or PDF format. Exports include tasks, projects, time logs, and comments. Large exports are emailed as a download link."
+  },
+  {
+    "question": "How do I set up two-factor authentication?",
+    "answer": "Go to Settings > Account > Security > Two-Factor Authentication. You can set up 2FA using an authenticator app (Google Authenticator, Authy) or receive codes via SMS. Backup codes are provided on setup."
+  },
+  {
+    "question": "Can I integrate TaskFlow AI with Slack?",
+    "answer": "Yes! Go to Settings > Integrations > Slack. Click 'Connect', authorize the Slack workspace, and select which channels receive notifications. You can configure notifications for task creation, completion, and comments."
+  },
+  {
+    "question": "How do I create a task?",
+    "answer": "Open a project, click '+ Add Task', enter the task title, description, assignee, due date, and priority level. You can also add labels, attachments, and subtasks. Tasks can be created via keyboard shortcut Ctrl+N."
+  },
+  {
+    "question": "How do I use the Kanban board?",
+    "answer": "Navigate to your project and select the 'Board' view. Tasks are displayed as cards in columns. Drag and drop cards between columns to update their status. You can customize column names and add WIP limits."
+  },
+  {
+    "question": "How do I track time on tasks?",
+    "answer": "Open any task and click the timer icon to start tracking. You can also manually log time by clicking 'Log Time' and entering hours. Time reports are available under Reports > Time Tracking."
+  },
+  {
+    "question": "What browsers are supported?",
+    "answer": "TaskFlow AI supports the latest versions of Chrome, Firefox, Safari, and Edge. We recommend Chrome for the best experience. Internet Explorer is not supported."
+  },
+  {
+    "question": "How do I set up automations?",
+    "answer": "Go to your project settings > Automations > Create Rule. You can set triggers (e.g., status change, due date) and actions (e.g., assign user, send notification, move to column). Pre-built templates are available."
+  },
+  {
+    "question": "Can I use TaskFlow AI on mobile?",
+    "answer": "Yes, TaskFlow AI has native apps for iOS and Android. Download from the App Store or Google Play. The mobile app supports task management, notifications, time tracking, and offline mode."
+  },
+  {
+    "question": "How do I archive a project?",
+    "answer": "Open the project, click the three-dot menu > Archive Project. Archived projects are moved to the Archive section and can be restored anytime. Archived projects don't count toward your plan's project limit."
+  },
+  {
+    "question": "How do I set task dependencies?",
+    "answer": "Open a task, go to the Dependencies tab, and click 'Add Dependency'. Choose 'Blocked by' or 'Blocking' and select the related task. Dependencies are shown in the Gantt chart view with connecting arrows."
+  },
+  {
+    "question": "How does the AI assistant work?",
+    "answer": "TaskFlow AI's built-in assistant can help you write task descriptions, summarize project status, suggest task assignments based on workload, and generate reports. Access it via the chat icon or by typing /ai in any text field."
+  },
+  {
+    "question": "How do I manage notifications?",
+    "answer": "Go to Settings > Notifications. You can configure email, push, and in-app notifications separately. Options include: task assignments, comments, mentions, due date reminders, and status changes. You can also set quiet hours."
+  },
+  {
+    "question": "What is the storage limit?",
+    "answer": "Free plan includes 500MB storage. Pro plan includes 10GB per user. Enterprise plans have unlimited storage. Supported file types include images, PDFs, documents, and videos up to 100MB each."
+  },
+  {
+    "question": "How do I use the Gantt chart?",
+    "answer": "Navigate to your project and select the 'Gantt' view. Tasks appear as horizontal bars on a timeline. Drag to adjust dates, create dependencies by drawing arrows between tasks, and set milestones by right-clicking on the timeline."
+  },
+  {
+    "question": "How do I contact support?",
+    "answer": "You can reach our support team via: 1) In-app chat (click the help icon), 2) Email support@taskflowai.com, 3) Help Center at help.taskflowai.com. Pro and Enterprise users get priority support with 4-hour response time."
+  },
+  {
+    "question": "How do I set up SSO (Single Sign-On)?",
+    "answer": "SSO is available on Enterprise plans. Go to Settings > Security > SSO Configuration. We support SAML 2.0 and OpenID Connect. Enter your Identity Provider details (Entity ID, SSO URL, Certificate) and test the connection."
+  },
+  {
+    "question": "How do I create custom fields?",
+    "answer": "Go to Project Settings > Custom Fields > Add Field. Choose from text, number, dropdown, date, checkbox, or URL types. Custom fields appear on all tasks within the project and can be used in filters and reports."
+  },
+  {
+    "question": "Can I use TaskFlow AI with GitHub?",
+    "answer": "Yes! Go to Settings > Integrations > GitHub. Connect your GitHub account, link repositories to projects, and enable automatic task creation from GitHub issues. Pull request status and commits are synced to tasks."
+  },
+  {
+    "question": "How do I generate reports?",
+    "answer": "Go to Reports from the sidebar. Available reports include: Burndown chart, Velocity, Time tracking summary, Workload distribution, and Task completion trends. Reports can be filtered by date range, team member, and project."
+  },
+  {
+    "question": "How do I delete my account?",
+    "answer": "Go to Settings > Account > Delete Account. You'll be asked to confirm with your password. All your data will be permanently deleted after 30 days. You can cancel the deletion within this period by contacting support."
+  },
+  {
+    "question": "How do I use templates?",
+    "answer": "Go to Templates from the sidebar. You can create project templates with predefined tasks, columns, and automations. Apply templates when creating new projects. Community templates are available in the Template Gallery."
+  },
+  {
+    "question": "What happens when I exceed my plan limits?",
+    "answer": "You'll receive a warning notification when approaching limits. Once exceeded, you won't be able to create new projects or invite members until you upgrade or remove existing items. Existing data remains accessible."
+  },
+  {
+    "question": "How do I use the calendar view?",
+    "answer": "Navigate to your project and select the 'Calendar' view. Tasks with due dates appear on the calendar. You can drag tasks to reschedule, click a date to create a new task, and filter by assignee or label."
+  },
+  {
+    "question": "How do I set up webhooks?",
+    "answer": "Go to Settings > Integrations > Webhooks > Add Webhook. Enter the URL, select events to trigger (task created, updated, deleted, etc.), and optionally add a secret for signature verification. Test with the 'Send Test' button."
+  },
+  {
+    "question": "How do I manage user permissions?",
+    "answer": "Go to Settings > Team > Members. Click on a user to edit their role: Admin (full access), Editor (can create and edit), Viewer (read-only). Project-level permissions can be set separately in each project's settings."
+  },
+  {
+    "question": "Is my data secure?",
+    "answer": "Yes. TaskFlow AI uses AES-256 encryption at rest, TLS 1.3 in transit, and SOC 2 Type II certified infrastructure. We perform regular security audits, penetration testing, and offer data residency options for Enterprise plans."
+  },
+  {
+    "question": "How do I use the API?",
+    "answer": "API documentation is available at docs.taskflowai.com/api. Authenticate using API keys from Settings > API Keys. The REST API supports all CRUD operations for tasks, projects, and users. Rate limit is 1000 requests/minute."
+  },
+  {
+    "question": "How do I duplicate a project?",
+    "answer": "Open the project, click the three-dot menu > Duplicate Project. Choose what to include: tasks, assignees, due dates, custom fields, and automations. The duplicated project appears in your dashboard with '(Copy)' appended to the name."
+  },
+  {
+    "question": "How do I use sprints?",
+    "answer": "Enable Scrum in Project Settings > Methodology. Create sprints from the Backlog view by setting sprint name, goal, start and end dates. Drag tasks from the backlog into the sprint. Track progress with the sprint burndown chart."
+  },
+  {
+    "question": "What is the uptime SLA?",
+    "answer": "TaskFlow AI guarantees 99.9% uptime for Pro plans and 99.99% for Enterprise plans. Check real-time status at status.taskflowai.com. Planned maintenance windows are scheduled on weekends with 48-hour advance notice."
+  }
+]
