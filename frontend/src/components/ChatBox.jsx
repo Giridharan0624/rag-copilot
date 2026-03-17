@@ -18,7 +18,7 @@ export default function ChatBox() {
 
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [messages]);
+  }, [messages, activeSources]);
 
   const handleSend = async () => {
     const query = input.trim();
@@ -43,6 +43,7 @@ export default function ChatBox() {
           text: data.answer,
           confidence: data.confidence,
           validated: data.validated,
+          sources: data.sources,
         },
       ]);
       setActiveSources(data.sources);
@@ -79,12 +80,12 @@ export default function ChatBox() {
         {messages.map((msg, i) => (
           <MessageBubble key={i} message={msg} />
         ))}
+
+        {activeSources && activeSources.length > 0 && (
+          <SourcePanel sources={activeSources} />
+        )}
         <div ref={chatEndRef} />
       </div>
-
-      {activeSources && activeSources.length > 0 && (
-        <SourcePanel sources={activeSources} />
-      )}
 
       {messages.length <= 1 && (
         <div className="chat-suggestions">
