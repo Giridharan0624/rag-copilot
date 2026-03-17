@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
 import MessageBubble from './MessageBubble';
-import SourcePanel from './SourcePanel';
 import { queryRAG } from '../services/api';
 import './ChatBox.css';
 
@@ -80,9 +79,6 @@ export default function ChatBox({ input, setInput }) {
           <MessageBubble key={i} message={msg} />
         ))}
 
-        {activeSources && activeSources.length > 0 && (
-          <SourcePanel sources={activeSources} />
-        )}
         <div ref={chatEndRef} />
       </div>
 
