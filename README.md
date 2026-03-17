@@ -155,6 +155,23 @@ rag-copilot/
     └── faiss_index/          # FAISS index + chunks
 ```
 
+## 🚀 Deployment
+
+### Part 1: Deploy Backend to Hugging Face Spaces (Docker)
+1. **Create Space**: Create a new Docker Space on Hugging Face.
+2. **Upload Code**: Upload the entire `backend/` folder (including the provided `Dockerfile` and updated `requirements.txt`). Do NOT upload your local `.env`.
+3. **Set Secrets**: Go to Space Settings -> Variables and secrets:
+   - `GROQ_API_KEY`: Your API Key
+   - `SECRET_KEY`: A secure random string
+   - `DEBUG`: `False`
+   - `ALLOWED_HOSTS`: `*` (or your specific space URL)
+4. **Build**: HF will automatically build the Docker container and expose the API on port 7860. Grab the assigned URL as your new `API_BASE`.
+
+### Part 2: Deploy Frontend to Netlify
+1. **Update API URL**: Edit `frontend/src/services/api.js` and change `const API_BASE = '/api';` to your Hugging Face Space URL.
+2. **Build App**: Run `npm run build` inside the `frontend/` directory. (The provided `public/_redirects` ensures React Router works correctly on Netlify).
+3. **Deploy**: Drag and drop the generated `frontend/dist` folder into Netlify Drop, or connect your GitHub repository to Netlify, setting the build command to `npm run build` and publish dir to `frontend/dist`.
+
 ---
 
 ## 🔮 Future Improvements
